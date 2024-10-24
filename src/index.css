@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.map-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Ensures consistent size */
+  gap: 2px;
+}
+
+.tile {
+  width: 50px; /* Fixed size */
+  height: 50px; /* Fixed size */
+  border: 1px solid #000;
+}
+
+.tile.water {
+  background-color: lightblue;
+}
+
+.tile.grass {
+  background-color: lightgreen;
+}
+
+.tile.land {
+  background-color: sandybrown;
+}
